@@ -44,7 +44,7 @@ if screen -list | grep -q "gensyn"; then
   screen -S gensyn -X stuff "^C"
   sleep 2
   screen -S gensyn -X quit
-  echo -e "${GREEN}Screen kapatıldı.${NC}"
+  echo -e "${GREEN}Screen closed.${NC}"
 else
   echo -e "${RED}No active 'gensyn' screen session found.${NC}"
 fi
